@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5930376B24A0613300A44F78 /* FSCountDownTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 5930376A24A0613300A44F78 /* FSCountDownTool.m */; };
 		59481D95249B124E0077FECF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59481D94249B124E0077FECF /* AppDelegate.m */; };
 		59481D9B249B124E0077FECF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59481D9A249B124E0077FECF /* ViewController.m */; };
 		59481D9E249B124E0077FECF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59481D9C249B124E0077FECF /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5930376924A0613300A44F78 /* FSCountDownTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSCountDownTool.h; sourceTree = "<group>"; };
+		5930376A24A0613300A44F78 /* FSCountDownTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FSCountDownTool.m; sourceTree = "<group>"; };
 		59481D90249B124E0077FECF /* KeepAliveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeepAliveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59481D93249B124E0077FECF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		59481D94249B124E0077FECF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -62,6 +65,8 @@
 				59481D94249B124E0077FECF /* AppDelegate.m */,
 				59481D99249B124E0077FECF /* ViewController.h */,
 				59481D9A249B124E0077FECF /* ViewController.m */,
+				5930376924A0613300A44F78 /* FSCountDownTool.h */,
+				5930376A24A0613300A44F78 /* FSCountDownTool.m */,
 				59481D9C249B124E0077FECF /* Main.storyboard */,
 				59481D9F249B124F0077FECF /* Assets.xcassets */,
 				59481DA1249B124F0077FECF /* LaunchScreen.storyboard */,
@@ -141,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5930376B24A0613300A44F78 /* FSCountDownTool.m in Sources */,
 				59481D9B249B124E0077FECF /* ViewController.m in Sources */,
 				59481D95249B124E0077FECF /* AppDelegate.m in Sources */,
 				59481DA6249B124F0077FECF /* main.m in Sources */,
@@ -283,8 +289,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ATVKY62WDP;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = P26J6XCT3X;
 				INFOPLIST_FILE = KeepAliveDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -292,6 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Maria.KeepAliveDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardAppID;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -300,8 +308,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = ATVKY62WDP;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = P26J6XCT3X;
 				INFOPLIST_FILE = KeepAliveDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -309,6 +318,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.Maria.KeepAliveDemo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = WildcardAppID;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
