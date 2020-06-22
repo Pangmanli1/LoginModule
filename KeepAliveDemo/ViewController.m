@@ -10,6 +10,9 @@
 
 @interface ViewController ()
 @property (nonatomic, assign)  NSInteger number;
+@property (nonatomic, strong)  FSCountDownTool *countDownTool;
+@property (nonatomic, assign)  UIBackgroundTaskIdentifier bgTaskID;
+
 @end
 
 @implementation ViewController
@@ -20,14 +23,15 @@
     
     self.countDownBtn.backgroundColor = [UIColor lightGrayColor];
     [self.countDownBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    FSCountDownTool * countDown = [FSCountDownTool new];
-    
-    [countDown countDownBegin:self.countDownBtn];
-    
-    
-
+    [self.countDownTool countDownBegin:self.countDownBtn];
 }
 
 
+-(FSCountDownTool *)countDownTool {
+    if (_countDownTool == nil) {
+        _countDownTool = [FSCountDownTool new];
+    }
+    return _countDownTool;
+}
 
 @end

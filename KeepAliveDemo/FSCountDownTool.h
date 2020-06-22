@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)countDownBegin:(UIButton *)sender;
 -(void)resetTimer;
 
+-(void)pauseTimer;
+-(void)restartTimer;
+
+
 @end
 
 NS_ASSUME_NONNULL_END

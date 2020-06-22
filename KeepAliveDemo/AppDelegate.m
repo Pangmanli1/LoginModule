@@ -11,7 +11,11 @@
 
 @property (nonatomic, assign)  UIBackgroundTaskIdentifier  bgTaskID;
 @property (nonatomic, assign)  NSInteger number;
+@property (nonatomic, strong)  NSTimer *bgTimer;
 @property (nonatomic, strong)  NSTimer *timer;
+
+@property (nonatomic, assign)  UIBackgroundTaskIdentifier bgTask;
+
 
 
 @end
@@ -26,7 +30,7 @@
     return YES;
 }
 
--(void)applicationDidEnterBackground:(UIApplication *)application {
+//-(void)applicationDidEnterBackground:(UIApplication *)application {
 //
 //    [self beginTask];
 //
@@ -56,8 +60,7 @@
 //       self.bgTaskID = UIBackgroundTaskInvalid;
 //   });
     
-}
-
+//}
 
 //app进入后台后保持运行
 - (void)beginTask
